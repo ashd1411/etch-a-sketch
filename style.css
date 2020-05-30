@@ -1,0 +1,39 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+.flex-container {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    height: 600 px;
+    width: 600 px;
+    border: 1px solid;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.changeColor {
+    background-color: coral;
+}
